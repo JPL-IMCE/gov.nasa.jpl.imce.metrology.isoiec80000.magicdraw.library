@@ -17,6 +17,11 @@ homepage := Some(url(s"https://jpl-imce.github.io/${moduleName.value}"))
 
 git.remoteRepo := s"git@github.com:${organizationName.value}/${moduleName.value}"
 
+// publish to bintray.com via: `sbt publish`
+publishTo := Some(
+  "JPL-IMCE" at
+    s"https://api.bintray.com/content/jpl-imce/${organization.value}/${moduleName.value}/${version.value}")
+
 scmInfo := Some(ScmInfo(
   browseUrl = url(s"https://github.com/${organizationName.value}/${moduleName.value}"),
   connection = "scm:"+git.remoteRepo.value))
