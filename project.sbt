@@ -1,7 +1,7 @@
 
 sbtPlugin := false
 
-name := "imce.metrology.isoiec80000.magicdraw.library"
+name := "gov.nasa.jpl.imce.metrology.isoiec80000.magicdraw.library"
 
 description := "IMCE MagicDraw library of ISO/IEC 80000 Metrology"
 
