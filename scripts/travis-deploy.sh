@@ -10,12 +10,5 @@ set -ev
 [ -z "${TRAVIS_TAG}" ] && exit 0;
 [ ! ${TRAVIS_SECURE_ENV_VARS} ] && exit -1;
 
-chmod 600 local.*
-eval `ssh-agent -s`
-ssh-add local.deploy_key
-git config --global push.default simple
-git config --global user.email "nobody@nobody.org"
-git config --global user.name "Travis CI"
-
 sbt -jvm-opts travis/jvmopts.compile -Dproject.version=$TRAVIS_TAG publishSigned
 
