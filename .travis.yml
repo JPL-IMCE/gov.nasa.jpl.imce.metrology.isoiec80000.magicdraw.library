@@ -17,9 +17,6 @@ jdk:
 
 language: scala
 
-scala:
-- 2.11.8
-
 script:
 - ./scripts/travis-build.sh
 - ./scripts/travis-deploy.sh
