@@ -1,4 +1,4 @@
-18.0.6
+Version 18.0.6
 
 ## Maven
 
@@ -10,7 +10,7 @@
  
 - NoMagic SysML 18.0 SP6:  [ ![Download](https://api.bintray.com/packages/tiwg/org.omg.tiwg.vendor.nomagic/com.nomagic.magicdraw.sysml.plugin/images/download.svg?version=18.0-sp6.2) ](https://bintray.com/tiwg/org.omg.tiwg.vendor.nomagic/com.nomagic.magicdraw.sysml.plugin/18.0-sp6.2/link)
 
-## Changes
+## Changes since Version [18.0.5](18.0.5.markdown)
 
 ### Fixes [issue 1](https://github.com/JPL-IMCE/gov.nasa.jpl.imce.metrology.isoiec80000.magicdraw.library/issues/1)
 

@@ -8,6 +8,6 @@ See the presentation from the [OMG SE-DSIG from March 2014](doc/SysML%20QUDV%20a
 
 # Changes from previous versions
 
-- [version 18.0.5](Changes/18.0.5.md)
+- [version 18.0.5](notes/18.0.5.markdown)
 
-- [version 18.0.6](Changes/18.0.6.md)
+- [version 18.0.6](notes/18.0.6.markdown)
