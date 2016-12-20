@@ -1,0 +1,42 @@
+Version 18.0.6
+
+## Maven
+
+[ ![Download](https://api.bintray.com/packages/jpl-imce/gov.nasa.jpl.imce/gov.nasa.jpl.imce.metrology.isoiec80000.magicdraw.library/images/download.svg?version=18.0.6) ](https://bintray.com/jpl-imce/gov.nasa.jpl.imce/gov.nasa.jpl.imce.metrology.isoiec80000.magicdraw.library/18.0.6/link)
+ 
+## Dependencies
+
+- NoMagic MagicDraw 18.0 SP6: [ ![Download](https://api.bintray.com/packages/tiwg/org.omg.tiwg.vendor.nomagic/com.nomagic.magicdraw.package/images/download.svg?version=18.0-sp6.2) ](https://bintray.com/tiwg/org.omg.tiwg.vendor.nomagic/com.nomagic.magicdraw.package/18.0-sp6.2/link)
+ 
+- NoMagic SysML 18.0 SP6:  [ ![Download](https://api.bintray.com/packages/tiwg/org.omg.tiwg.vendor.nomagic/com.nomagic.magicdraw.sysml.plugin/images/download.svg?version=18.0-sp6.2) ](https://bintray.com/tiwg/org.omg.tiwg.vendor.nomagic/com.nomagic.magicdraw.sysml.plugin/18.0-sp6.2/link)
+
+## Changes since Version [18.0.5](18.0.5.markdown)
+
+### Fixes [issue 1](https://github.com/JPL-IMCE/gov.nasa.jpl.imce.metrology.isoiec80000.magicdraw.library/issues/1)
+
+#### In `modelLibrary/IMCE/IMCE.ISO80000-5 Thermodynamics.mdzip`:
+
+- Renamed the unit `degree celsius` to `degree Celsius` (incl. prefixed units & value types)
+
+- Added the unit `degree Celsius` from `IMCE.ISO80000-5 Thermodynamics non-coherent`.
+
+  That is, `degree Celsius` is a coherent unit in the VIM sense
+  (see [coherent derived unit](http://jcgm.bipm.org/vim/en/1.12.html) because a QUDV `AffineConversionUnit` 
+  (ie., `degree Celsius`) of a `referenceUnit` (i.e., `kelvin`) )s  dimensionally equivalent to a derived unit
+  of that `referenceUnit` with a rational exponent of 1.
+  
+  Note that this also entails moving the QUDV links between `degree Celsius` and `celcius Temperature` and
+  the reference `kelvin`.
+  
+- Changed the value type `celsiusTemperature[kelvin]` to `celsiusTemperature[degree Celsius]`
+  (i.e., the unit changed from `kelvin` to `degree Celsius`)
+  
+- `degree Celsius` is a unit of the coherent `IMCE.ISO80000-5 Units` system of units.
+
+  Note that the prefix variations remain non-coherent units in `IMCE.ISO80000-5 Thermodynamics non-coherent`.
+  
+#### In `modelLibrary/IMCE/IMCE.ISO80000-5 Thermodynamics non-coherent.mdzip`:
+
+- Moved the unit `degree Celsius` to `IMCE.ISO80000-5 Thermodynamics`.
+
+- Changed all value types `celsiusTemperature[...]` to use the prefixed units of `degree Celcius` instead of `kelvin`.

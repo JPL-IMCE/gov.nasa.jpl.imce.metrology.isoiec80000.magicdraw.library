@@ -8,7 +8,6 @@ See the presentation from the [OMG SE-DSIG from March 2014](doc/SysML%20QUDV%20a
 
 # Changes from previous versions
 
-- In IMCE.ISO80000-5 Thermodynamics::Units
+- [version 18.0.5](notes/18.0.5.markdown)
 
-  -- 'cubic metre ratio per pascasl' has a slot value: hasReducedFactors=false
-  -- 'metre coefficient per kelvin' has a slot value: hasReducedFactors=false
+- [version 18.0.6](notes/18.0.6.markdown)
