@@ -1,0 +1,21 @@
+Version 18.0.7
+
+## Maven
+
+[ ![Download](https://api.bintray.com/packages/jpl-imce/gov.nasa.jpl.imce/gov.nasa.jpl.imce.metrology.isoiec80000.magicdraw.library/images/download.svg?version=18.0.7) ](https://bintray.com/jpl-imce/gov.nasa.jpl.imce/gov.nasa.jpl.imce.metrology.isoiec80000.magicdraw.library/18.0.7/link)
+ 
+## Dependencies
+
+- NoMagic MagicDraw 18.0 SP6: [ ![Download](https://api.bintray.com/packages/tiwg/org.omg.tiwg.vendor.nomagic/com.nomagic.magicdraw.package/images/download.svg?version=18.0-sp6.2) ](https://bintray.com/tiwg/org.omg.tiwg.vendor.nomagic/com.nomagic.magicdraw.package/18.0-sp6.2/link)
+ 
+- NoMagic SysML 18.0 SP6:  [ ![Download](https://api.bintray.com/packages/tiwg/org.omg.tiwg.vendor.nomagic/com.nomagic.magicdraw.sysml.plugin/images/download.svg?version=18.0-sp6.2) ](https://bintray.com/tiwg/org.omg.tiwg.vendor.nomagic/com.nomagic.magicdraw.sysml.plugin/18.0-sp6.2/link)
+
+## Changes since Version [18.0.6](18.0.6.markdown)
+
+### Fixes [issue 3](https://github.com/JPL-IMCE/gov.nasa.jpl.imce.metrology.isoiec80000.magicdraw.library/issues/3)
+
+#### Packaging:
+
+- The directory structure of the MD resource produced during publishing did not conform to the one expected by MagicDraw
+
+- Rather than `modelLibrary`, the directory `modeLibraries` should be used
