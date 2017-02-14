@@ -101,7 +101,7 @@ def dynamicScriptsResourceSettings(projectName: String): Seq[Setting[_]] = {
     mappings in Universal in packageBin ++= {
 
       val modelLibraryFiles =
-      (baseDirectory.value / "modelLibrary" / "IMCE" * "*.mdzip").pair(relativeTo(baseDirectory.value)).sortBy(_._2)
+      (baseDirectory.value / "modelLibraries" / "IMCE" * "*.mdzip").pair(relativeTo(baseDirectory.value)).sortBy(_._2)
 
       val sampleFiles =
         (baseDirectory.value / "samples" / "IMCE" * "*.mdzip").pair(relativeTo(baseDirectory.value)).sortBy(_._2)
